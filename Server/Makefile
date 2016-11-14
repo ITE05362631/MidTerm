@@ -1,6 +1,4 @@
-server:Server.o
-	gcc -o server Server.o
-Server.o:Server.c
-	gcc -c Server.c
+server:Server.o doprocessing.o
+	gcc -o server Server.o doprocessing.o
 clean:
 	rm *.o
